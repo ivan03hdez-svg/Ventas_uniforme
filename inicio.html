@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Css/estilo.css">
+	<title></title>
+</head>
+<body>
+	<header>
+		<div class="login-button">
+			<img title="logo" src="Images/icon.png" class="logo">
+			<a href="#" id="close-sesion" class="gradient-text">Cerrar Sesión</a>
+		</div>
+		<h1>Catálogo de Productos</h1>
+		<div>
+			<nav>
+				<button onclick="displayProductsByCategory('Uniforme Escolar')">Escolar</button>
+				<button onclick="displayProductsByCategory('Ropa')">Ropa</button>
+				<button onclick="displayProductsByCategory('Accesorios')">Accesorios</button>
+			</nav>
+		</div>
+	</header>
+	<main class="main-content">
+		<h3>UNIFORMES ESCOLARES</h3>
+		<div class="product-container" id="escolar">
+			<p id="no-products-message" style="display: none;">No hay productos disponibles en esta categoría.</p>
+		</div>
+		<section>
+			<h3>UNIFORMES DEPORTIVOS</h3>
+		</section>
+		<section>
+			<h3>UNIFROMES MEDICOS</h3>
+		</section>
+	</main>
+	<footer>@</footer>
+	
+	
+	<script src="JS/script.js" defer></script>
+
+</body>
+</html> 

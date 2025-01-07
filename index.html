@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="icon" href="Images/icon.png" type="image/x-icon">
+    <title>VENTA DE UNIFORMES</title>
+</head>
+<body>
+    <!-- Div que aparece sobre la pantalla -->
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <button class="close-btn" id="close-btn" aria-label="Cerrar">✖</button>
+            <h2 id="modal-title">Inicia Sesión</h2>
+            <form id="authForm">
+                <div class="input-box">
+                    <input type="text" placeholder="Email" id="email" class="input-control">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" id="pass" class="input-control">
+                </div>
+                <div id="extra-content">
+                    <div class="input-link">
+                        <a href="RecuperarCuenta.html" class="gradient-text">¿Has olvidado tu contraseña?</a>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="submit" id="auth-btn">Ingresar</button>
+                    <!-- <button id="registro">Registrase</button> -->
+                </div>
+            </form>
+            <p id="auth-switch-text">
+                ¿No tienes una cuenta? 
+                <a href="#" class="gradient-text" id="switch-to-register"> Crea una cuenta</a>
+            </p>
+        </div>
+    </div>
+
+        <!-- Contenido de la pagina -->
+    <header>
+        <div class="login-button">
+            <img title="logo" src="Images/icon.png" class="logo">
+            <a href="#" id="open-overlay" class="gradient-text">Inicia Sesión</a>
+        </div>
+        <h1>Catálogo de Productos</h1>
+        <div>
+            <nav>
+                <button onclick="displayProductsByCategory('Uniforme Escolar')">Escolar</button>
+                <button onclick="displayProductsByCategory('Ropa')">Ropa</button>
+                <button onclick="displayProductsByCategory('Accesorios')">Accesorios</button>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    
+    <main class="main-content">
+        <h3>UNIFORMES ESCOLARES</h3>
+        <div class="product-container" id="escolar">
+            <p id="no-products-message" style="display: none;">No hay productos disponibles en esta categoría.</p>
+        </div>
+        <section>
+            <h3>UNIFORMES DEPORTIVOS</h3>
+        </section>
+        <section>
+            <h3>UNIFROMES MEDICOS</h3>
+        </section>
+    </main>
+    <footer>@</footer>
+
+    
+    <script src="JS/script.js" defer></script>
+
+</body>
+</html>
