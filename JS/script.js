@@ -121,6 +121,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     }
     
+    // Lógica para cerrar sesión
+    const closeSesionButton = document.getElementById('close-sesion');
+    if (closeSesionButton) {
+        closeSesionButton.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevenir la acción predeterminada del botón
+            // Mostrar mensaje de éxito
+            alert('Has cerrado sesión correctamente.');
+            // Redirigir al usuario al login
+            window.location.href = 'index.html'; 
+        });
+    }
+    
     //Evento Registro
     document.getElementById('switch-to-register').addEventListener('click', function (e){
         e.preventDefault();
@@ -156,18 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    //Logica para cerrar sesión
-    const closeSesionButton = document.getElementById('close-sesion');
-    if (closeSesionButton) {
-        closeSesionButton.addEventListener('click', function (event) {
-            event.preventDefault();
-            //localStorage.removeItem('currentUser'); // Elimina el usuario autenticado
-            alert('Has cerrado sesión correctamente.');
-            window.location.href = 'login.html'; // Redirige al usuario al login
-        });
-    } else {
-        console.warn('El botón "Cerrar Sesión" no se encontró en el DOM.');
-    }
+
+
 
     const productos = [
         {
